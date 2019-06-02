@@ -9,6 +9,38 @@ $(function () {
 
 });
 
+$(function () {
+
+	$('.mainLink').click(function() {
+		$.scrollTo(document.getElementById('mainPage'), 800);
+	});
+
+});
+
+$(function () {
+
+	$('.skillsLink').click(function() {
+		$.scrollTo(document.getElementById('skills'), 800);
+	});
+
+});
+
+$(function () {
+
+	$('.aboutLink').click(function() {
+		$.scrollTo(document.getElementById('about'), 800);
+	});
+
+});
+
+$(function () {
+
+	$('.contactLink').click(function() {
+		$.scrollTo(document.getElementById('contact'), 800);
+	});
+
+});
+
 
 
 new TypeIt('#typedtext', {
