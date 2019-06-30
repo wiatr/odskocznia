@@ -17,25 +17,27 @@ header {
   right: 0;
   z-index: 100;
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: 600;
   transition: all 0.2s ease-in-out;
   height: auto;
-  background-color:transparent; 
+  background-color:white; 
   text-align: justify;
   height: 3em;
 }
 
-header a, p {
-  color:white;
+header a {
+  color:#495057;
   text-decoration: none;
   transition: all .2s;
   margin-right: 1em;
 }
 
-header p {
-  margin-left: 1em;
-  font-family: 'Gochi Hand', cursive;
-  font-size: 2em;
+header div {
+  margin-left: 2em;
+  /*content: url("../images/logo2.png");*/
+ width: 100%;
+ height: auto;
+ background-size: cover;
 }
 
 header a:hover {
@@ -145,40 +147,126 @@ header > div::before {
 #mainPage {
   width: 100%;
   height: 100vh;
-  background-image: url("../images/lan.jpg");
+  background-image: url("../images/lann.jpg");
   background-size: cover;
   position: relative;
-  background-color: rgba(121, 120, 120, 0.3);
+ 
 }
-
 
 #typedtext {
   color: white;
-  font-size: 3em;
-  padding-top: 6em;
+  font-size: 2.5em;
+  padding-top: 8em;
   margin-left: 1em;
   font-weight: 700;
 }
 
+#skills::before, .skills::after {
+  display: block;
+  clear: both;
+  content: "";
+}
 #skills {
   width: 100%;
-  height: 100vh;
-  background-color: #218DB4;
+  height: 191vh;
+  background-color:#44CFCB;
+ 
+}
+#skills2 {
+  width: 100%;
+  height: auto;
+  background-color: #44CFCB
+  
 }
 
-#skills h1, #about h1, #contact h1 {
+#skills3 {
+  width: 100%;
+  height: auto;
+  background-color:#F9A83C;
+}
+
+#skills .left{
+  width: 50%;
+  height: auto;
+  float: left;
+ 
+}
+
+#skills .right {
+  width: 50%;
+  height: auto;
+  content: url("../images/dzieci.jpg");
+  background-size: cover;
+  position: relative;
+  float: right;
+}
+
+#skills2::before, .skills2::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+#skills2 .left2 {
+
+  width: 50%;
+  height: auto;
+  float: left;
+  content: url("../images/doro.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+#skills2 .right2 {
+  width: 50%;
+  height: auto;
+  float: right;
+  color: white;
+}
+
+#skills3::before, .skills3::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+#skills3 .left3 {
+
+  width: 50%;
+  height: auto;
+  float: left;
+  color: white;
+}
+
+#skills3 .right3 {
+  width: 50%;
+  height: auto;
+  float: right;
+  
+  content: url("../images/org.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+#about h1 {
   text-align: center;
   font-size: 2em;
   padding-top: 3em;
   color: white;
 }
 
-#skills .left, #about .left, #contact .left {
+#skills .left {
+  color: white;
+  padding: 1.5em;
+  padding-top: 5em;
+}
+
+.left3, .right2{
   color: white;
   padding: 2em;
 }
-
-#skills .left h2, #about .left h2 {
+.left3 h1, .right2 h1{
+  font-size: 1.5em;
+}
+#about .left h2 {
   padding: 1em;
   font-size: 1em;
   font-weight: 400;
@@ -187,7 +275,17 @@ header > div::before {
 #about {
   width: 100%;
   height: 100vh;
-  background-color: #44CFCB;
+  background-color: #ED5022;
+  background-image: url("../images/about.jpg");
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+#about p {
+  padding-left: 4em;
+  padding-top: 1em;
+  padding-right: 4em;
+  font-size: 1.1em;
 }
 
 #contact {
@@ -195,6 +293,16 @@ header > div::before {
   height: 100vh;
   background-color: #2A4494;
   text-align: center;
+  color: white;
+  
+}
+#contact h1, h2{
+  padding: 1em;
+}
+#contact a {
+  color: white;
+  text-decoration: none;
+  
 }
 
 .container {
