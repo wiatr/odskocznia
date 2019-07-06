@@ -274,7 +274,7 @@ header > div::before {
 
 #about {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #ED5022;
   background-image: url("../images/about.jpg");
   background-size: cover;
