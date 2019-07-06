@@ -98,24 +98,24 @@ header > div::before {
       text-align: center;
   }
 
+  #skills, #skills3 {
+    flex-direction: column;
+  }
 
-#skills .left {
-  width: 100%;
-        height: 100%;
-        margin:0 auto;
-        float: none;
+  #skills2 {
+    flex-direction: column-reverse
+  }
+  
+  #skills .left, #skills .right,  #skills2 .left2, #skills2 .right2,  #skills3 .left3, #skills3 .right3 {
+    min-width: 100%;
+    height: auto;
     }
 
-#skills .right {
-  width: 100%;
-        margin:0 auto;
-        float: none;
-        height: 100%;
-        margin-bottom: 2.5em;
 }
 
+
+
   
-}
 
 .arrow {
   width: 100%;
@@ -177,35 +177,32 @@ header > div::before {
   font-weight: 700;
 }
 
-#skills::before, .skills::after {
-  display: block;
-  clear: both;
-  content: "";
-}
+
 #skills {
   width: 100%;
-  height: 191vh;
+  height: auto;
   background-color:#44CFCB;
-  overflow: hidden;
+  display: flex;
  
 }
 #skills2 {
   width: 100%;
   height: auto;
-  background-color: #44CFCB
+  background-color: #F9A83C;
+  display: flex;
   
 }
 
 #skills3 {
   width: 100%;
   height: auto;
-  background-color:#F9A83C;
-}
+  background-color:#44CFCB;
+  display: flex;
+} 
 
 #skills .left{
   width: 50%;
   height: auto;
-  float: left;
  
 }
 
@@ -214,60 +211,39 @@ header > div::before {
   height: auto;
   content: url("../images/dzieci.jpg");
   background-size: cover;
-  overflow: hidden;
 }
 
-#skills2::before, .skills2::after {
-  display: block;
-  clear: both;
-  content: "";
-}
+
 #skills2 .left2 {
 
   width: 50%;
-  height: auto;
   float: left;
   content: url("../images/doro.jpg");
   background-size: cover;
-  position: relative;
+  height: auto;
 }
 
 #skills2 .right2 {
   width: 50%;
   height: auto;
-  float: right;
-  color: white;
 }
 
-#skills3::before, .skills3::after {
-  display: block;
-  clear: both;
-  content: "";
-}
 #skills3 .left3 {
 
   width: 50%;
   height: auto;
-  float: left;
   color: white;
 }
 
 #skills3 .right3 {
   width: 50%;
   height: auto;
-  float: right;
   
   content: url("../images/org.jpg");
   background-size: cover;
-  position: relative;
 }
 
-#about h1 {
-  text-align: center;
-  font-size: 2em;
-  padding-top: 3em;
-  color: white;
-}
+
 
 #skills .left {
   color: white;
@@ -281,7 +257,15 @@ header > div::before {
 }
 .left3 h1, .right2 h1{
   font-size: 1.5em;
+} 
+
+#about h1 {
+  text-align: center;
+  font-size: 2em;
+  padding-top: 3em;
+  color: white;
 }
+
 #about .left h2 {
   padding: 1em;
   font-size: 1em;
