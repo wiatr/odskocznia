@@ -111,13 +111,10 @@ header > div::before {
     height: auto;
     }
 
-    .name #typedtext {
-      font-size: 1.5em;
-      color: white;
-  
-  padding-top: 8em;
-  margin-left: 1em;
-  font-weight: 700;
+     .name #typedtext {
+      font-size: 2em;
+      padding-top: 12em;
+     
     }
 
 }
