@@ -1,5 +1,14 @@
 
 
+$(window).load(function() {
+    setTimeout(
+        function() {
+            $("#loader-wrapper").fadeOut();
+        }, 8000);
+});
+			
+			
+
 
 $(function () {
 
