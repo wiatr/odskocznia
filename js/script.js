@@ -49,7 +49,7 @@ $(function () {
 
 new TypeIt('#typedtext', {
 	strings: ["Pomagamy odkrywać", "własne możliwości"],
-	speed: 50,
+	speed: 25,
 	waitUntilVisible: true
   }).go();
 
