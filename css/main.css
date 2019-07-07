@@ -7,17 +7,32 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-
+#overlayer {
+  width:100%;
+  height:600vh;  
+  position:absolute;
+  z-index:1000;
+  background:#23BBAB;
+}
 loader-wrapper {
-  position: fixed;
+ /* position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
-  background: #ECF0F1;
-  /* display: none; */
+  z-index: 6000;
+  background: #ECF0F1; */
+ /* display: none; */
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index:2000;
+  border: 4px solid #Fff;
+  top: 50%;
+  animation: loader 2s infinite ease;
 }
+ 
 
 .preload-juggle {
   width: 300px;
@@ -27,22 +42,25 @@ loader-wrapper {
   margin-top: -150px;
   left: 50%;
   margin-left: -150px;
+  z-index:3000;
 }
 .preload-juggle div {
   position: absolute;
   width: 21px;
   height: 21px;
   border-radius: 10.5px;
-  background: #1bbc9b;
+  background: #C41883;
   margin-top: 150px;
   margin-left: 150px;
   animation: juggle 2.1s linear infinite;
 }
 .preload-juggle div:nth-child(1) {
   animation-delay: -0.7s;
+  background:#ED5023;
 }
 .preload-juggle div:nth-child(2) {
   animation-delay: -1.4s;
+  background:#F9A83A;
 }
 
 @keyframes juggle {
@@ -187,6 +205,10 @@ header > div::before {
       padding-top: 10em;
      
     }
+    #about .content{
+      padding: 2em;
+      font-size: 1.2em;
+    }
 
 }
 
@@ -239,7 +261,7 @@ header > div::before {
 
 #mainPage {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../images/lann.jpg");
   background-size: cover;
   position: relative;
@@ -252,6 +274,7 @@ header > div::before {
   padding-top: 8em;
   margin-left: 1em;
   font-weight: 700;
+  padding-bottom: 1em;
 }
 
 
@@ -343,12 +366,6 @@ header > div::before {
   color: white;
 }
 
-#about .left h2 {
-  padding: 1em;
-  font-size: 1em;
-  font-weight: 400;
-}
-
 #about {
   width: 100%;
   min-height: 100vh;
@@ -358,11 +375,12 @@ header > div::before {
   position: relative;
   color: white;
 }
-#about p {
-  padding-left: 4em;
-  padding-top: 1em;
-  padding-right: 4em;
-  font-size: 1.1em;
+.content {
+  padding: 3em;
+  font-size: 1.5em;
+}
+.content p {
+  padding: 0.15em;
 }
 
 #contact {
