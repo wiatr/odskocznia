@@ -17,6 +17,15 @@ function classToggle() {
 	document.querySelector('.aboutLink')
 	.addEventListener('click', classToggle);
 
+	$(document).ready(function(){
+		$('.single-item').slick();
+		});
+	
+
+	  
+	
+			  
+
 $(function () {
 
 	$('.arrow').click(function() {

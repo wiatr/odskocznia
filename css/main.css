@@ -357,7 +357,7 @@ background-position:center;
 
 #skills .right {
   width: 50%;
-  height: auto;
+ /* height: auto;*/
   content: url("../images/dzieci.jpg");
   background-size: cover;
 }
