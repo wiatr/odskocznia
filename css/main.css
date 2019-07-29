@@ -170,9 +170,7 @@ margin-right: 1em;
 .Navbar__ToggleShow {
     display: flex;
   }
-  .logo {
-    width: 150px;
-  }
+
     
 .Navbar__Link-toggle {
   align-self: flex-end;
@@ -219,6 +217,11 @@ background-position:center;
       padding: 2em;
       font-size: 1.2em;
     }
+    @media (orientation: landscape){
+      .arrow {
+        display: none;
+      }
+    }
 
 }
 
@@ -226,7 +229,9 @@ background-position:center;
   .name #typedtext {
     font-size: 1.7em;
     padding-top: 8em;
-
+}
+.logo {
+  width: 150px;
 }
 }
 
