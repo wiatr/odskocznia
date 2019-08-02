@@ -5,7 +5,11 @@ function classToggle() {
 	navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
   }
   
-  document.querySelector('.Navbar__Link-toggle')
+
+
+
+
+ document.querySelector('.Navbar__Link-toggle')
 	.addEventListener('click', classToggle);
 	
 	document.querySelector('.skillsLink')
@@ -18,6 +22,12 @@ function classToggle() {
 	.addEventListener('click', classToggle);
 
 	document.querySelector('.fbLink')
+	.addEventListener('click', classToggle);
+
+	document.querySelector('.instLink')
+	.addEventListener('click', classToggle);
+
+	document.querySelector('.linkdLink')
 	.addEventListener('click', classToggle);
 
 
