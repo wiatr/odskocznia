@@ -221,12 +221,21 @@ background-position:center;
       .arrow {
         display: none;
       }
-      .logo {
-        width: 150px;
+     
+      a .fblink {
+        width:32px;
+        height:32px;
+    }
+    .logo {
+      width: 150px;
+    }
       }
+      .fblink {
+        width:32px;
+        height:32px;
     }
 
-}
+  }
 
 @media only screen and (max-width: 330px){
   .name #typedtext {
