@@ -299,12 +299,12 @@ background-position:center;
   padding-bottom: 1em;
 }
 
-#news {
+/*#news {
   width: 100%;
   min-height: 100vh;
   background-color:white;
  
-}
+}*/
 
 #skills {
   width: 100%;
@@ -357,7 +357,7 @@ background-position:center;
 
 #skills .right {
   width: 50%;
- /* height: auto;*/
+ height: Sauto; 
   content: url("../images/dzieci.jpg");
   background-size: cover;
 }
