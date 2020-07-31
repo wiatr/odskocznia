@@ -121,6 +121,11 @@ loader-wrapper {
   padding-left: 1em;
   font-size: 1.15em;
 }
+.Navbar__Link a:hover, .Navbar__Link a:active, .Navbar__Link a:visited {
+  text-decoration:#44CFCB underline;
+  -webkit-text-decoration:#44CFCB underline;
+} 
+
 
 .Navbar__Items {
   display: flex;
